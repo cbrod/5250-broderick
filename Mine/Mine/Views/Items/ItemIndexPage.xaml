@@ -19,6 +19,8 @@
 
             <ListView x:Name="ItemsListView" 
                     ItemsSource="{Binding Dataset}"
+                    VerticalOptions="FillAndExpand"
+                    HasUnevenRows="true"
                     IsRefreshing="{Binding IsBusy, Mode=OneWay}"
                     RefreshCommand="{Binding LoadItemsCommand}"
                     CachingStrategy="RecycleElement"
