@@ -30,12 +30,11 @@ namespace Mine.Services
         {
             datalist = new List<ItemModel>()
             {
-                new ItemModel { Name = "First item", Description="This is an item description." },
-                new ItemModel { Name = "Second item", Description="This is an item description." },
-                new ItemModel { Name = "Third item", Description="This is an item description." },
-                new ItemModel { Name = "Fourth item", Description="This is an item description." },
-                new ItemModel { Name = "Fifth item", Description="This is an item description." },
-                new ItemModel { Name = "Sixth item", Description="This is an item description." }
+                new ItemModel { Name = "Standard Poké Ball", Description="Poké Ball that can be used to catch a Pokémon.", Value=0 },
+                new ItemModel { Name = "Great Poké Ball", Description="Slightly higher catch rate than a Standard Poké Ball.", Value=1 },
+                new ItemModel { Name = "Ultra Poké Ball", Description="Poké Ball with a high catch rate.", Value=2 },
+                new ItemModel { Name = "Quick Poké Ball", Description="Chance of catching Pokémon increases if used at the start of a battle.", Value=3 },
+                new ItemModel { Name = "Repeat Poké Ball", Description="If used on a Pokémon type the trainer has caught before, catch rate increases.", Value=4 },
             };
 
             return true;
