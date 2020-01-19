@@ -39,7 +39,7 @@
             <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
                 <Label Text="CPSC 5250 WQ20"></Label>
                 <Label Text="Celeste Broderick"></Label>
-                <Label Text="1/14/2020 - 12:08am"></Label>
+                <Label Text="1/18/2020 - 7:40pm"></Label>
             </StackLayout>
         </ScrollView>
     </Grid>
