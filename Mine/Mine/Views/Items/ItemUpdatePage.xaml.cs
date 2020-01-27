@@ -51,5 +51,11 @@ namespace Mine.Views
 
             await Navigation.PopAsync();
         }
+
+        // Updates Value text to reflect update when stepper is triggered
+        void Value_OnStepperValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            ValueValue.Text = String.Format("{0}", e.NewValue);
+        }
     }
 }
