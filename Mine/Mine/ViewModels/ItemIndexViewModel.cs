@@ -63,10 +63,12 @@ namespace Mine.ViewModels
             if (isSQL == 1)
             {
                 DataStore = DataSource_SQL;
+                CurrentDataSource = 1;
             }
             else
             {
                 DataStore = DataSource_Mock;
+                CurrentDataSource = 0;
             }
 
             SetNeedsRefresh(true);
