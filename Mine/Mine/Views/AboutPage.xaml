@@ -60,6 +60,7 @@
                     HorizontalOptions="Start"
                     VerticalOptions="Center"
                     x:Name="DataSourceValue"
+                    IsToggled="{Binding ItemIndexViewModel.Instance.CurrentDataSource}"
                     Toggled="DataSource_Toggled"
                     />
             </StackLayout>
