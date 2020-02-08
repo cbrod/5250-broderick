@@ -253,5 +253,14 @@ namespace Mine.ViewModels
             LoadDatasetCommand.Execute(null);
         }
         #endregion Refresh
+
+        /// <summary>
+        /// Wipe the data from our DataStore
+        /// </summary>
+        public void WipeDataList()
+        {
+            DataStore.WipeDataList();
+            SetNeedsRefresh(true);
+        }
     }
 }
