@@ -23,8 +23,8 @@ namespace Mine.Views
             CurrentDateTime.Text = System.DateTime.Now.ToString("MM/dd/yy hh:mm:ss");
         }
 
-        // 
-        void DataSource_Toggled(object sender, AddingNewEventArgs e)
+        // Sets the source of the data to SQL or Mock
+        void DataSource_Toggled(object sender, EventArgs e)
         {
             if (DataSourceValue.IsToggled == true)
             {
