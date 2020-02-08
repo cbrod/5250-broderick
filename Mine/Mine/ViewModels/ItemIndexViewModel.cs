@@ -50,6 +50,9 @@ namespace Mine.ViewModels
         // DataStore currently being used
         public IDataStore<ItemModel> DataStore;
 
+        // flag to track which DataSource is being used
+        public int CurrentDataSource = 0;
+
         /// <summary>
         /// Sets the data source to SQL or Mock
         /// </summary>
