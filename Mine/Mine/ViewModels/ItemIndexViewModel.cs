@@ -79,8 +79,9 @@ namespace Mine.ViewModels
         /// 
         /// The constructor subscribes message listeners for crudi operations
         /// </summary>
-        public ItemIndexViewModel()
+        private ItemIndexViewModel()
         {
+            SetDataSource(0);   // Default to Mock
             Title = "Items";
 
             Dataset = new ObservableCollection<ItemModel>();
