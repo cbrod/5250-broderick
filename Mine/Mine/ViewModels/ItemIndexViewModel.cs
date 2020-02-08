@@ -118,6 +118,11 @@ namespace Mine.ViewModels
                 SetDataSource(data);
             });
 
+            // Register the WipeDataList Message
+            MessagingCenter.Subscribe<AboutPage, bool>(this, "WipeDataList", (obj, data) =>
+            {
+                WipeDataList();
+            });
         }
 
         /// <summary>
