@@ -68,9 +68,9 @@ namespace Mine.Services
             return (result == 1);
         }
 
-        public Task<List<ItemModel>> IndexAsync()
+        public async Task<List<ItemModel>> IndexAsync()
         {
-            return Database.Table<ItemModel>().ToListAsync();
+            return await Database.Table<ItemModel>().ToListAsync();
         }
     }
 }
