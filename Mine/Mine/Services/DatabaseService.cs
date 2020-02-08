@@ -40,9 +40,9 @@ namespace Mine.Services
             return await Database.InsertAsync(item);
         }
 
-        public Task<ItemModel> ReadAsync(string id)
+        public async Task<ItemModel> ReadAsync(string id)
         {
-            return Database.Table<ItemModel>().Where(i => i.Id.Equals(id)).FirstOrDefaultAsync();
+            return await Database.Table<ItemModel>().Where(i => i.Id.Equals(id)).FirstOrDefaultAsync();
         }
 
         public async Task<bool> UpdateAsync(ItemModel item)
