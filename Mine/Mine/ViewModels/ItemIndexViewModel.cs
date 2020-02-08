@@ -50,6 +50,25 @@ namespace Mine.ViewModels
         // DataStore currently being used
         public IDataStore<ItemModel> DataStore;
 
+        /// <summary>
+        /// Sets the data source to SQL or Mock
+        /// </summary>
+        /// <param name="isSQL"></param>
+        /// <returns></returns>
+        public bool SetDataSource(int isSQL)
+        {
+            if (isSQL == 1)
+            {
+                DataStore = DataSource_SQL;
+            }
+            else
+            {
+                DataStore = DataSource_Mock;
+            }
+
+            return true;
+        }
+
         // Command to force a Load of data
         public Command LoadDatasetCommand { get; set; }
 
