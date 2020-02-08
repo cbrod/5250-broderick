@@ -37,7 +37,7 @@ namespace Mine.Services
 
         public async Task<int> CreateAsync(ItemModel item)
         {
-            return Database.InsertAsync(item);
+            return await Database.InsertAsync(item);
         }
 
         public Task<ItemModel> ReadAsync(string id)
