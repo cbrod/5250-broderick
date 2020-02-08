@@ -41,10 +41,14 @@ namespace Mine.ViewModels
         // The Data set of records
         public ObservableCollection<ItemModel> Dataset { get; set; }
 
-        /// <summary>
-        /// Connection to the Data store
-        /// </summary>
-        public IDataStore<ItemModel> DataStore => DependencyService.Get<IDataStore<ItemModel>>();
+        // Mock DataSource
+        public IDataStore<ItemModel> DataSource_Mock => new MockDataStore();
+
+        // SQL DataSource
+        public IDataStore<ItemModel> DataSource_SQL => new DatabaseService();
+
+        // DataStore currently being used
+        public IDataStore<ItemModel> DataStore;
 
         // Command to force a Load of data
         public Command LoadDatasetCommand { get; set; }
