@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using Mine.ViewModels;
 using Xamarin.Forms;
 
 namespace Mine.Views
@@ -26,11 +27,11 @@ namespace Mine.Views
         {
             if (DataSourceValue.IsToggled == true)
             {
-
+                ItemIndexViewModel.Instance.SetDataSource(1);
             }
             else
             {
-
+                ItemIndexViewModel.Instance.SetDataSource(0);
             }
         }
     }
